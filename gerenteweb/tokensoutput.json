@@ -1,0 +1,32 @@
+{
+    "12084_1": {
+        "codigo_produto": "12084",
+        "quantidade_produto": 1,
+        "status": "foi para a contabilidade"
+    },
+    "12992_1": {
+        "codigo_produto": "12992",
+        "quantidade_produto": 1,
+        "status": "em rota para o almoxarifado"
+    },
+    "14332_1": {
+        "codigo_produto": "14332",
+        "quantidade_produto": 3,
+        "status": "em rota para o almoxarifado"
+    },
+    "15420_1": {
+        "codigo_produto": "15420",
+        "quantidade_produto": 2,
+        "status": "em rota para o almoxarifado"
+    },
+    "19858_1": {
+        "codigo_produto": "19858",
+        "quantidade_produto": 5,
+        "status": "em rota para o almoxarifado"
+    },
+    "22501_1": {
+        "codigo_produto": "22501",
+        "quantidade_produto": 1,
+        "status": "em rota para o almoxarifado"
+    }
+}

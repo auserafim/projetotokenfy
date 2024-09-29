@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Codes - Random Tokens</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* QR codes grid styling */
+        .qr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .qr-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .qr-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .token {
+            font-size: 14px;
+            font-weight: bold;
+            color: #3498db;
+            word-wrap: break-word;
+        }
+
+        /* Button styles */
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 600px) {
+            .qr-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Codes - Lote 2924 0902 9931 3300 0131 5500 1000 0077 7014 7795 9596</h1>
+
+    <div class="qr-grid">
+        <!-- QR Code Item 1 -->
+        <div class="qr-item">
+            <img src="/static/qrcode1.png" alt="QR Code 1">
+            <p class="token">Token: 2345abcd-e67f-98op-1234-ghijkl5678mn</p>
+        </div>
+
+        <!-- QR Code Item 2 -->
+        <div class="qr-item">
+            <img src="/static/qrcode2.png" alt="QR Code 2">
+            <p class="token">Token: 5678mnop-90qr-2345-abcd-efghijkl1234</p>
+        </div>
+
+        <!-- QR Code Item 3 -->
+        <div class="qr-item">
+            <img src="/static/qrcode1.png" alt="QR Code 3">
+            <p class="token">Token: 9abc1234-dfgh-5678-ijkl-2345mnop6789</p>
+        </div>
+
+        <!-- QR Code Item 4 -->
+        <div class="qr-item">
+            <img src="/static/qrcode1.png" alt="QR Code 4">
+            <p class="token">Token: 1234ijkl-90qr-5678-efgh-mnopabcd2345</p>
+        </div>
+
+        <!-- QR Code Item 5 -->
+        <div class="qr-item">
+            <img src="/static/qrcode1.png" alt="QR Code 5">
+            <p class="token">Token: efgh5678-mnop-1234-abcd-ijkl2345dfgh</p>
+        </div>
+
+        <!-- QR Code Item 6 -->
+        <div class="qr-item">
+            <img src="/static/qrcode1.png" alt="QR Code 6">
+            <p class="token">Token: abcd2345-ijkl-5678-efgh-mnop1234ijkl</p>
+        </div>
+
+
+     
+
+    </div>
+
+    <!-- Button to return to home -->
+    <a href="/" class="button">Return to Home</a>
+</body>
+</html>

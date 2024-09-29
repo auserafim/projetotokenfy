@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Status de cada produto</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        /* Style for the buttons */
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button-secondary {
+            background-color: #008CBA;
+        }
+
+        .button-secondary:hover {
+            background-color: #007bb5;
+        }
+
+        /* Style for the container around the buttons */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* For mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            .button {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Status de cada produto</h1>
+
+    <table>
+        <tr>
+            <th>Token</th>
+            <th>Status</th>
+            <th>Avançar</th>
+        </tr>
+        {% for key, value in tokens.items() %}
+            {% if key != 'token_lote' %}
+            <tr id="row-{{ key }}">
+                <td>{{ key }}</td>
+                <td>{{ value['status'] }}</td>
+                <td>
+                    <form action="/advance_product/{{ key }}" method="POST">
+                        <button type="submit" class="button">Avança Status</button>
+                    </form>
+                </td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+
+    <!-- Well-rounded button for returning to home -->
+    <div class="button-container">
+        <a href="/" class="button button-secondary">Retornar para home</a>
+    </div>
+</body>
+</html>
