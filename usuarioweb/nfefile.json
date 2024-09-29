@@ -1,0 +1,35 @@
+{
+  "nfe_id": "29240902993133000131550010000077701477959596",
+  "itens": [
+    {
+      "codigo_produto": "12084",
+      "quantidade_produto": 1.00,
+      "preco": 20.00
+    },
+    {
+      "codigo_produto": "12992",
+      "quantidade_produto": 1.00,
+      "preco": 35.00
+    },
+    {
+      "codigo_produto": "14332",
+      "quantidade_produto": 1.00,
+      "preco": 45.00
+    },
+    {
+      "codigo_produto": "15420",
+      "quantidade_produto": 2.00,
+      "preco": 3.50
+    },
+    {
+      "codigo_produto": "19858",
+      "quantidade_produto": 5.00,
+      "preco": 45.00
+    },
+    {
+      "codigo_produto": "22501",
+      "quantidade_produto": 1.00,
+      "preco": 30.00
+    }
+  ]
+}

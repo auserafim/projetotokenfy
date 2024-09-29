@@ -1,0 +1,94 @@
+{
+    "token_lote": "700e8520fdd2cc00abf0c607dd37d79e56a5e87861379b64fd03ada2f35a2516",
+    "12084unidade1": {
+        "codigo_produto": "12084",
+        "quantidade_produto": 1,
+        "preco": 20.0,
+        "token_produto": "e054a29a-d00d-538f-8447-f8a0bb3d7251",
+        "status": "em rota para o almoxarifado"
+    },
+    "12992unidade1": {
+        "codigo_produto": "12992",
+        "quantidade_produto": 1,
+        "preco": 35.0,
+        "token_produto": "28c8959c-4b00-58b4-bd64-a63b7b6313c2",
+        "status": "chegou no almoxarifado"
+    },
+    "14332unidade1": {
+        "codigo_produto": "14332",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "8921888c-aa4e-5624-b320-364bfb9ddfa1",
+        "status": "em fiscaliza\u00e7\u00e3o"
+    },
+    "14332unidade2": {
+        "codigo_produto": "14332",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "53538ce6-0ce7-5fbe-a6b2-5e565f79486f",
+        "status": "em fiscaliza\u00e7\u00e3o"
+    },
+    "14332unidade3": {
+        "codigo_produto": "14332",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "298b3b62-0e5b-557c-8748-4d04ff0860d9",
+        "status": "em fiscaliza\u00e7\u00e3o"
+    },
+    "15420unidade1": {
+        "codigo_produto": "15420",
+        "quantidade_produto": 1,
+        "preco": 3.5,
+        "token_produto": "fa9e1836-19d6-5545-a08a-10f6c3f7dbea",
+        "status": "foi para a contabilidade"
+    },
+    "15420unidade2": {
+        "codigo_produto": "15420",
+        "quantidade_produto": 1,
+        "preco": 3.5,
+        "token_produto": "0f0d1f8d-978f-5ede-8cf1-d7373672172a",
+        "status": "foi para a contabilidade"
+    },
+    "19858unidade1": {
+        "codigo_produto": "19858",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "43709e14-fc64-5f12-bb68-efe35546b128",
+        "status": "etiquetado"
+    },
+    "19858unidade2": {
+        "codigo_produto": "19858",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "ec510f0f-b5f4-5372-b0d8-92eed8be2955",
+        "status": "etiquetado"
+    },
+    "19858unidade3": {
+        "codigo_produto": "19858",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "55725a43-5135-573f-b297-73a46f171904",
+        "status": "etiquetado"
+    },
+    "19858unidade4": {
+        "codigo_produto": "19858",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "9b1c7855-5c5e-5056-9e3b-aea816eed30b",
+        "status": "etiquetado"
+    },
+    "19858unidade5": {
+        "codigo_produto": "19858",
+        "quantidade_produto": 1,
+        "preco": 45.0,
+        "token_produto": "66a64ec2-1a4a-5893-a176-5656a273ac74",
+        "status": "etiquetado"
+    },
+    "22501unidade1": {
+        "codigo_produto": "22501",
+        "quantidade_produto": 1,
+        "preco": 30.0,
+        "token_produto": "4453e588-b4e5-5f56-a08e-c2745ec5e0a0",
+        "status": "despachado para entrega"
+    }
+}
