@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .resultado {
+            margin-top: 20px;
+            background: #e7f3fe;
+            padding: 10px;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <h2>Lista de Produtos</h2>
+    <ul>
+        {% for codigo, item in armazenamento_tokens.items() %}
+            {% if codigo != 'token_lote' %}
+                <li>
+                    <strong>Código do Produto:</strong> {{ item.codigo_produto }}unidade{{ codigo.split('unidade')[-1] }}<br>
+                    <strong>Token:</strong> {{ item.token_produto }}<br>
+                    <strong>Status:</strong> {{ item.status }}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    
+    <h2>Buscar Status do Produto</h2>
+    <form method="POST" action="/buscar_status_token" id="formBusca">
+        <input type="text" name="token_produto" placeholder="Digite o código do produto" required>
+        <button type="submit">Buscar Status</button>
+    </form>
+
+    <div id="resultadoBusca" class="resultado" style="display: none;"></div>
+
+    <a href="/" style="display: block; margin-top: 20px; color: #007BFF;">Sair</a>
+
+    <script>
+        document.getElementById('formBusca').onsubmit = function(event) {
+            event.preventDefault();  // Impede o envio padrão do formulário
+            const formData = new FormData(this);
+            fetch('/buscar_status_token', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultadoDiv = document.getElementById('resultadoBusca');
+                if (data.error) {
+                    resultadoDiv.innerHTML = `<strong>Erro:</strong> ${data.error}`;
+                } else {
+                    resultadoDiv.innerHTML = `<strong>Produto:</strong> ${data.codigo_produto}<br><strong>Status:</strong> ${data.status}`;
+                }
+                resultadoDiv.style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Erro ao buscar o token:', error);
+            });
+        };
+    </script>
+    
+</body>
+</html>
